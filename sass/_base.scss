@@ -1,0 +1,72 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* CSS Custom Properties */
+:root {
+  /* Colors */
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-violet: hsl(270, 3%, 87%);
+  --dark-grayish-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+  --red-errors: hsl(0, 100%, 66%);
+
+  /* Gradient Colors */
+
+  --darker: hsl(249, 99%, 64%);
+  --lighter: hsl(278, 94%, 30%);
+
+  /* Fonts */
+  --main-font: "Space Grotesk", sans-serif;
+  --font-weight: 500;
+  --font-size: 18px;
+
+  /* Design Widts */
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+}
+
+/* Global Styles */
+body {
+  font-family: var(--main-font);
+  font-weight: var(--font-weight);
+  width: 100%;
+  position: relative;
+}

@@ -1,0 +1,34 @@
+.flex-group {
+  height: 100%;
+  display: flex;
+}
+.grid-group {
+  display: grid;
+  border: 2px solid black;
+  width: 35%;
+  margin: 10rem 0 0 35rem;
+  padding: 2rem;
+}
+.white-background {
+  width: 70%;
+}
+.gradient-background {
+  width: 30%;
+  height: 100%;
+  background-image: url("/images/bg-main-desktop.png");
+  background-size: cover;
+  background-position: top;
+}
+
+.card {
+  position: absolute;
+  top: 4rem;
+  left: 14rem;
+  padding: 3rem;
+}
+.card__front {
+  margin-bottom: 3rem;
+}
+.card__back {
+  margin-left: 6rem;
+}

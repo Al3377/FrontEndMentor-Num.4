@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="flex-group">
+      <div class="gradient-background">&nbsp;</div>
+      <div class="white-background">
+        <div class="form grid-group">
+          <label for="name" class="form__label">cardholder name</label
+          ><input type="text" class="form__input-box" id="name" />
+          <label for="card-number" class="form__label">card number</label
+          ><input type="text" class="form__input-box" id="card-number" />
+          <label for="date" class="form__label">exp.date (mm/yy)</label
+          ><input type="text" class="form__input-box" id="date" />
+          <label for="cvc" class="form__label">cvc</label
+          ><input type="text" class="form__input-box" id="cvc" />
+          <button>Confirm</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card__front"></div>
+      <div class="card__back"></div>
+    </div>
+  </body>
+</html>

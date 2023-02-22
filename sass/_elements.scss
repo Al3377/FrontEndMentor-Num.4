@@ -1,0 +1,20 @@
+.card {
+  --card-width: 447px;
+  --card-height: 245px;
+  & > * {
+    width: var(--card-width);
+    height: var(--card-height);
+  }
+
+  &__front {
+    background-image: url("/images/bg-card-front.png");
+  }
+
+  &__back {
+    background-image: url("/images/bg-card-back.png");
+  }
+}
+
+.form {
+  text-transform: uppercase;
+}
