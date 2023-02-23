@@ -55,8 +55,6 @@ h6 {
 
   /* Fonts */
   --main-font: "Space Grotesk", sans-serif;
-  --font-weight: 500;
-  --font-size: 18px;
 
   /* Design Widts */
   --mobile-width: 375px;
@@ -66,7 +64,14 @@ h6 {
 /* Global Styles */
 body {
   font-family: var(--main-font);
-  font-weight: var(--font-weight);
   width: 100%;
+  // max-width: 1440px;
+  // margin: auto;
   position: relative;
+  font-size: var(--font-size);
+}
+
+::placeholder {
+  color: var(--light-grayish-violet);
+  font-size: 18px;
 }

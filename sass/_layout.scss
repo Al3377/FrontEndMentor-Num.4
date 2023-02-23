@@ -1,19 +1,21 @@
 .flex-group {
   height: 100%;
+  width: 100%;
   display: flex;
 }
+
 .grid-group {
   display: grid;
-  border: 2px solid black;
-  width: 35%;
-  margin: 10rem 0 0 35rem;
-  padding: 2rem;
+  width: 40%;
+  margin: 15% auto 0 auto;
+  // padding: 2rem;
 }
 .white-background {
-  width: 70%;
+  // width: 70%;
+  flex-grow: 1;
 }
 .gradient-background {
-  width: 30%;
+  width: 28%;
   height: 100%;
   background-image: url("/images/bg-main-desktop.png");
   background-size: cover;
@@ -22,13 +24,18 @@
 
 .card {
   position: absolute;
-  top: 4rem;
-  left: 14rem;
-  padding: 3rem;
+  top: 16%;
+  left: 10%;
 }
 .card__front {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .card__back {
   margin-left: 6rem;
+}
+
+.name-date-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.55rem;
 }

@@ -4,17 +4,87 @@
   & > * {
     width: var(--card-width);
     height: var(--card-height);
+    color: var(--white);
   }
 
   &__front {
     background-image: url("/images/bg-card-front.png");
+
+    text-transform: uppercase;
+
+    padding-left: 2.8em;
+    padding-right: 2.3em;
+
+    &--logo {
+      padding-top: 1.3em;
+    }
+
+    &--number {
+      padding-top: 3em;
+      font-size: 1.5rem;
+      letter-spacing: 5px;
+      text-align: center;
+    }
+
+    &--name {
+      letter-spacing: 3px;
+      font-size: 1rem;
+    }
   }
 
   &__back {
     background-image: url("/images/bg-card-back.png");
+
+    &--cvc {
+      padding-top: 6.8rem;
+      padding-left: 22rem;
+    }
   }
 }
 
 .form {
   text-transform: uppercase;
+
+  &__label {
+    display: inline-block;
+    padding-bottom: 0.4rem;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--very-dark-violet);
+  }
+
+  &__input-box {
+    padding: 0.6em 0.8em;
+    border-radius: 8px;
+    color: var(--light-grayish-violet);
+    border: 2px solid var(--light-grayish-violet);
+    margin-left: 0.3rem;
+    max-width: 22rem;
+  }
+
+  &__label-group label:first-child {
+    margin-right: 4.4rem;
+  }
+
+  &__input-box--date {
+    display: inline-block;
+    width: 5.2rem;
+    text-align: center;
+  }
+
+  &__input-box--cvc {
+    display: inline-block;
+    width: 9.2rem;
+    margin-left: 1.6rem;
+  }
+}
+
+.btn {
+  margin-top: 2.6rem;
+  max-width: 22.5rem;
+  padding: 0.8rem 0;
+  border-radius: 8px;
+  border: none;
+  color: var(--light-grayish-violet);
+  background-color: var(--very-dark-violet);
 }

@@ -58,8 +58,6 @@ h6 {
   --lighter: hsl(278, 94%, 30%);
   /* Fonts */
   --main-font: "Space Grotesk", sans-serif;
-  --font-weight: 500;
-  --font-size: 18px;
   /* Design Widts */
   --mobile-width: 375px;
   --desktop-width: 1440px;
@@ -68,30 +66,34 @@ h6 {
 /* Global Styles */
 body {
   font-family: var(--main-font);
-  font-weight: var(--font-weight);
   width: 100%;
   position: relative;
+  font-size: var(--font-size);
+}
+
+::placeholder {
+  color: var(--light-grayish-violet);
+  font-size: 18px;
 }
 
 .flex-group {
   height: 100%;
+  width: 100%;
   display: flex;
 }
 
 .grid-group {
   display: grid;
-  border: 2px solid black;
-  width: 35%;
-  margin: 10rem 0 0 35rem;
-  padding: 2rem;
+  width: 40%;
+  margin: 15% auto 0 auto;
 }
 
 .white-background {
-  width: 70%;
+  flex-grow: 1;
 }
 
 .gradient-background {
-  width: 30%;
+  width: 28%;
   height: 100%;
   background-image: url("/images/bg-main-desktop.png");
   background-size: cover;
@@ -100,17 +102,22 @@ body {
 
 .card {
   position: absolute;
-  top: 4rem;
-  left: 14rem;
-  padding: 3rem;
+  top: 16%;
+  left: 10%;
 }
 
 .card__front {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .card__back {
   margin-left: 6rem;
+}
+
+.name-date-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.55rem;
 }
 
 .card {
@@ -120,16 +127,75 @@ body {
 .card > * {
   width: var(--card-width);
   height: var(--card-height);
+  color: var(--white);
 }
 .card__front {
   background-image: url("/images/bg-card-front.png");
+  text-transform: uppercase;
+  padding-left: 2.8em;
+  padding-right: 2.3em;
+}
+.card__front--logo {
+  padding-top: 1.3em;
+}
+.card__front--number {
+  padding-top: 3em;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.card__front--name {
+  letter-spacing: 3px;
+  font-size: 1rem;
 }
 .card__back {
   background-image: url("/images/bg-card-back.png");
 }
+.card__back--cvc {
+  padding-top: 6.8rem;
+  padding-left: 22rem;
+}
 
 .form {
   text-transform: uppercase;
+}
+.form__label {
+  display: inline-block;
+  padding-bottom: 0.4rem;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--very-dark-violet);
+}
+.form__input-box {
+  padding: 0.6em 0.8em;
+  border-radius: 8px;
+  color: var(--light-grayish-violet);
+  border: 2px solid var(--light-grayish-violet);
+  margin-left: 0.3rem;
+  max-width: 22rem;
+}
+.form__label-group label:first-child {
+  margin-right: 4.4rem;
+}
+.form__input-box--date {
+  display: inline-block;
+  width: 5.2rem;
+  text-align: center;
+}
+.form__input-box--cvc {
+  display: inline-block;
+  width: 9.2rem;
+  margin-left: 1.6rem;
+}
+
+.btn {
+  margin-top: 2.6rem;
+  max-width: 22.5rem;
+  padding: 0.8rem 0;
+  border-radius: 8px;
+  border: none;
+  color: var(--light-grayish-violet);
+  background-color: var(--very-dark-violet);
 }
 
 /*# sourceMappingURL=style.css.map */
