@@ -1,0 +1,14 @@
+{
+  "name": "frontendmentor-num.4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded sass/main.scss:style.css"
+  },
+  "author": "Alen Vitas",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.59.3"
+  }
+}

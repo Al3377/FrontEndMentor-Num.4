@@ -6,12 +6,14 @@
 *::after {
   box-sizing: border-box;
 }
+
 /*
     2. Remove default margin
   */
 * {
   margin: 0;
 }
+
 /*
     3. Allow percentage-based heights in the application
   */
@@ -19,6 +21,7 @@ html,
 body {
   height: 100%;
 }
+
 /*
     Typographic tweaks!
     4. Add accessible line-height
@@ -28,6 +31,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
 /*
     6. Improve media defaults
   */
@@ -39,6 +43,7 @@ svg {
   display: block;
   max-width: 100%;
 }
+
 /*
     7. Remove built-in form typography styles
   */
@@ -48,6 +53,7 @@ textarea,
 select {
   font: inherit;
 }
+
 /*
     8. Avoid text overflows
   */
@@ -60,6 +66,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
 /*
     9. Create a root stacking context
   */
@@ -78,6 +85,7 @@ h6 {
   display: flex;
   flex-direction: column;
 }
+
 .card {
   background-color: green;
   min-height: 45%;
@@ -86,15 +94,6 @@ h6 {
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-}
-.card-size {
-  /* height: 35%;
-  width: 80%;
-  padding-top: 50%; */
-  position: relative;
-  width: 80%;
-  height: calc(80% / 1.58); /* Aspect ratio of 1.58:1 */
-  padding-top: 50%;
 }
 .card__front {
   background-color: greenyellow;
@@ -106,6 +105,14 @@ h6 {
   background-color: orange;
   align-self: end;
 }
+
+.card-size {
+  position: relative;
+  width: 80%;
+  height: 50.6329113924%; /* Aspect ratio of 1.58:1 */
+  padding-top: 50%;
+}
+
 .info {
   background-color: blue;
   flex-grow: 1;
@@ -116,6 +123,7 @@ h6 {
   margin: 1rem auto;
   background-color: antiquewhite;
 }
+
 @media (min-width: 768px) {
   .main {
     flex-direction: row;
@@ -129,8 +137,6 @@ h6 {
     width: 60%;
     flex-direction: column;
     justify-content: center;
-    /* justify-content: center;
-    align-items: center; */
   }
   .card__front {
     align-self: center;
@@ -143,11 +149,10 @@ h6 {
     margin-top: 2rem;
   }
   .card-size {
-    max-height: 262px;
     max-width: 408px;
+    height: 258.2278481013px;
     padding-top: 0;
   }
-
   .info {
     flex-grow: 1;
   }
@@ -157,3 +162,5 @@ h6 {
     margin: 5% auto;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
