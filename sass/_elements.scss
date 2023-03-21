@@ -2,6 +2,7 @@
   &__table {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
   &__name {
     width: 100%;
@@ -9,6 +10,7 @@
   &__label {
     text-transform: uppercase;
     font-size: 0.8rem;
+    letter-spacing: 0.1em;
   }
   &__input {
     border-radius: 5px;
@@ -37,7 +39,78 @@
   border-radius: 5px;
   color: var(--white);
   background-color: var(--very-dark-violet);
-  font-size: 0.9rem;
-  padding: 0.5em 4em;
-  margin: 0.8em 0.4em;
+  font-size: 1rem;
+  padding: 0.8em 4em;
+  margin: 1em 0.2em;
+}
+
+.card {
+  color: var(--white);
+
+  &__back {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  &__logo {
+    padding: 0.45rem;
+    max-width: 25%;
+    margin-bottom: 1.1em;
+    @media (min-width: 375px) {
+      margin-bottom: 1.6rem;
+    }
+    @media (min-width: 1200px) {
+      max-width: 100%;
+      padding: 1.3rem;
+      margin-bottom: 3rem;
+    }
+  }
+  &__number {
+    padding-left: 0.45rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    @media (min-width: 375px) {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.1rem;
+    }
+    @media (min-width: 1200px) {
+      font-size: 1.65rem;
+      padding-left: 1.3rem;
+      margin-bottom: 1.8rem;
+      letter-spacing: 0.2em;
+    }
+  }
+  &__name {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    margin-right: auto;
+    padding-left: 0.45rem;
+    @media (min-width: 1200px) {
+      padding-left: 1.3rem;
+      font-size: 1rem;
+    }
+  }
+  &__date {
+    font-size: 0.7rem;
+    padding-right: 0.45rem;
+    @media (min-width: 1200px) {
+      padding-right: 1.3rem;
+      font-size: 1rem;
+    }
+  }
+  &__cvc {
+    margin-right: 1.5rem;
+    margin-top: 3rem;
+    @media (min-width: 375px) {
+      margin-right: 1.75rem;
+      margin-top: 3.65rem;
+    }
+    @media (min-width: 1200px) {
+      margin-top: 6.75rem;
+      margin-right: 3.7rem;
+      font-size: 0.9rem;
+    }
+  }
 }

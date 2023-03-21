@@ -33,10 +33,28 @@
   </head>
   <body>
     <body>
-      <main class="main">
-        <div class="card">
-          <div class="card__front card-size"></div>
-          <div class="card__back card-size"></div>
+    
+      <main class="main ">
+        <div class="card ">
+          <div class="card__front card-size">
+            <div class="card__logo">
+              <img src="images/card-logo.svg" alt="two circles">
+            </div>
+            <div class="card__number" id="card-number">
+              0000 0000 0000 0000
+            </div>
+            <div class="flex-row">
+              <div class="card__name" id="card-name">Jane Appleseed</div>
+              <div class="card__date"><span id="card-month">00</span>/ 
+               <span id="card-year">00</span> </div>
+            </div>
+          </div>
+          <div class="card__back card-size">
+            <div class="card__cvc" id="card-cvc">
+              000
+            </div>
+
+          </div>
         </div>
         <div class="info">
              <div class="info__table">
@@ -61,20 +79,20 @@
       
                 <div class="info__date-cvc flex-col">
                   <div>
-                    <label class="info__label" for="date">exp.date (MM/YY)</label>
+                    <label class="info__label" for="date-month">exp.date (MM/YY)</label>
                     <label class="info__label" for="cvc">cvc</label>
                   </div>
                   <div class="flex-row">
                     <input
                       class="info__input info__input--small"
                       type="number"
-                      id="date"
+                      id="date-month"
                       placeholder="MM"
                     />
                     <input
                       class="info__input info__input--small"
                       type="number"
-                      id="date"
+                      id="date-year"
                       placeholder="YY"
                     />
                     <input
@@ -97,7 +115,8 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Alen Vitas</a>.
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
