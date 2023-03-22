@@ -81,3 +81,13 @@ body {
   font-family: "Space Grotesk", sans-serif;
   font-size: 18px;
 }
+
+.error {
+  outline-color: var(--red);
+}
+.error::after {
+  content: "Wrong format, numbers only";
+  color: var(--red);
+  font-size: 0.7rem;
+  display: block;
+}

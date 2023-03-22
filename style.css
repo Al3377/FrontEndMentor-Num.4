@@ -89,6 +89,17 @@ body {
   font-size: 18px;
 }
 
+.error {
+  outline-color: var(--red);
+}
+
+.error::after {
+  content: "Wrong format, numbers only";
+  color: var(--red);
+  font-size: 0.7rem;
+  display: block;
+}
+
 /* LAYOUT */
 .main {
   margin: auto;
@@ -211,7 +222,7 @@ body {
 .info__table {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 0.9rem;
 }
 .info__name {
   width: 100%;
@@ -226,6 +237,9 @@ body {
   border: 1px solid var(--light-grayish-violet);
   padding: 0.4em 0 0.4em 0.8em;
   margin: 0.2em 0 0.2em 0.2em;
+}
+.info__input:hover {
+  cursor: pointer;
 }
 .info__input--big {
   width: 100%;
