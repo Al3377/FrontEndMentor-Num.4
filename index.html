@@ -75,7 +75,7 @@
                     id="number"
                     placeholder="e.g. 1234 5678 9123 000"
                     maxlength="19"
-                    onkeyup="addSpaces(this)"
+                    
                   />
                   <span id="number-error" class=""></span>
                 </div>
@@ -91,12 +91,19 @@
                       type="number"
                       id="date-month"
                       placeholder="MM"
+                      min="1"
+                      max="12"
+                      
                     />
+                    
                     <input
                       class="info__input info__input--small"
                       type="number"
                       id="date-year"
                       placeholder="YY"
+                      maxlength="2"
+                      minlength="2"
+
                     />
                     <input
                       class="info__input info__input--cvc"
@@ -105,9 +112,10 @@
                       placeholder="e.g. 123"
                     />
                   </div>
+                  <!-- <span class="text-warning"></span> -->
                 </div>
       
-                <a href="#" class="button">Confirm</a>
+                <a href="#" class="button" id="btn">Confirm</a>
               </div>
             
           

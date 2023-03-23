@@ -21,6 +21,10 @@
     &:hover {
       cursor: pointer;
     }
+    &:focus {
+      outline: 2px solid var(--very-dark-violet);
+      //Ovde treba linear gradient za boju outline-a u focus stanju
+    }
 
     &--big {
       width: 100%;
@@ -46,7 +50,7 @@
   background-color: var(--very-dark-violet);
   font-size: 1rem;
   padding: 0.8em 4em;
-  margin: 1em 0.2em;
+  margin: 1.5rem 0.2em;
 }
 
 .card {

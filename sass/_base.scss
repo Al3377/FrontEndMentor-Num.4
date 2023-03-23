@@ -83,10 +83,16 @@ body {
 }
 
 .error {
-  outline-color: var(--red);
+  outline-color: var(--red) !important;
 }
-.error::after {
+.error-text::after {
   content: "Wrong format, numbers only";
+  color: var(--red);
+  font-size: 0.7rem;
+  display: block;
+}
+.text-warning::after {
+  content: "Can't be blank";
   color: var(--red);
   font-size: 0.7rem;
   display: block;
