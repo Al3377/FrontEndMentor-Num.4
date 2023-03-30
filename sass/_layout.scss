@@ -15,8 +15,8 @@
   padding: 1rem;
   display: flex;
   flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+
   &__front {
     background-image: url(/images/bg-card-front.png);
     border-radius: 10px;
@@ -27,7 +27,7 @@
   &__back {
     background-image: url(/images/bg-card-back.png);
     align-self: end;
-    margin-top: 10%;
+    margin-top: 18%;
   }
 }
 .card-size {
@@ -95,7 +95,6 @@
 
   .card-size {
     max-width: 447px;
-    // max-height: 262px;
     height: calc(447px / 1.82);
     padding-top: 0;
     padding-bottom: 0;
@@ -121,4 +120,7 @@
 }
 .flex-row {
   display: flex;
+}
+.complete {
+  margin-bottom: 5rem;
 }

@@ -35,7 +35,7 @@
     <body>
     
       <main class="main ">
-        <div class="card ">
+        <section class="card ">
           <div class="card__front card-size">
             <div class="card__logo">
               <img src="images/card-logo.svg" alt="two circles">
@@ -55,71 +55,85 @@
             </div>
 
           </div>
-        </div>
-        <div class="info">
-             <div class="info__table">
-                <div class="info__name flex-col">
-                  <label class="info__label" for="name">cardholder name</label>
-                  <input
-                    class="info__input   info__input--big "
-                    type="text"
-                    id="name"
-                    placeholder="e.g. Jane Appleseed"
-                  />
-                </div>
-                <div class="info__number flex-col">
-                  <label class="info__label" for="number">card number</label>
-                  <input
-                    class="info__input info__input--big"
-                    type="text"
-                    id="number"
-                    placeholder="e.g. 1234 5678 9123 000"
-                    maxlength="19"
-                    
-                  />
-                  <span id="number-error" class=""></span>
-                </div>
-      
-                <div class="info__date-cvc flex-col">
-                  <div>
-                    <label class="info__label" for="date-month">exp.date (MM/YY)</label>
-                    <label class="info__label" for="cvc">cvc</label>
-                  </div>
-                  <div class="flex-row">
+        </section>
+        
+        <div class="info ">
+               <div class="info__table" id="form">
+                  <div class="info__name flex-col">
+                    <label class="info__label" for="name">cardholder name</label>
                     <input
-                      class="info__input info__input--small"
-                      type="number"
-                      id="date-month"
-                      placeholder="MM"
-                      min="1"
-                      max="12"
-                      
-                    />
-                    
-                    <input
-                      class="info__input info__input--small"
-                      type="number"
-                      id="date-year"
-                      placeholder="YY"
-                      maxlength="2"
-                      minlength="2"
-
-                    />
-                    <input
-                      class="info__input info__input--cvc"
+                      class="info__input   info__input--big "
                       type="text"
-                      id="cvc"
-                      placeholder="e.g. 123"
+                      id="name"
+                      placeholder="e.g. Jane Appleseed"
                     />
                   </div>
-                  <!-- <span class="text-warning"></span> -->
+                  <div class="info__number flex-col">
+                    <label class="info__label" for="number">card number</label>
+                    <input
+                      class="info__input info__input--big"
+                      type="text"
+                      id="number"
+                      placeholder="e.g. 1234 5678 9123 000"
+                      maxlength="19"
+          
+                    />
+                    <span id="number-error" ></span>
+                  </div>
+                  <div class="info__date-cvc flex-col">
+                    <div>
+                      <label class="info__label" for="date-month">exp.date (MM/YY)</label>
+                      <label class="info__label" for="cvc">cvc</label>
+                    </div>
+                    <div class="flex-row">
+                      <input
+                        class="info__input info__input--small"
+                        type="number"
+                        id="date-month"
+                        placeholder="MM"
+                        min="1"
+                        max="12"
+          
+                      />
+                      
+          
+                      <input
+                        class="info__input info__input--small"
+                        type="number"
+                        id="date-year"
+                        placeholder="YY"
+                        maxlength="2"
+                        minlength="2"
+                      />
+                      <input
+                        class="info__input info__input--cvc"
+                        type="text"
+                        id="cvc"
+                        placeholder="e.g. 123"
+                        maxlength="3"
+                        minlength="3"
+                      />
+                    </div>
+                    <span id="month-error" ></span>
+                    <!-- <span class="text-warning"></span> -->
+                  </div>
+                  <a href="#" class="button" id="btn">Confirm</a>
+          
                 </div>
-      
-                <a href="#" class="button" id="btn">Confirm</a>
-              </div>
-            
+               <!--This section apears when the button is pressed and the input fields are validated-->
+                <section id="compl-id" class="complete remove">
+                  <div class="complete__icon">
+                    <img src="images/icon-complete.svg" alt="icon complete" ></div>
+                  <p class="complete__tnx">
+                    Thank you!
+                  </p>
+                  <p class="complete__text">We've added your card details</p>
+                  <a href="#" class="button" id="btn">Continue</a>
+                </section>
           
         </div>
+
+       
       </main>
 
     <div class="attribution">
