@@ -126,7 +126,7 @@ body {
   max-width: 375px;
   display: flex;
   flex-direction: column;
-  background-image: url(/images/bg-main-mobile.png);
+  background-image: url(images/bg-main-mobile.png);
   background-position: top;
   background-repeat: no-repeat;
 }
@@ -139,14 +139,14 @@ body {
   justify-content: start;
 }
 .card__front {
-  background-image: url(/images/bg-card-front.png);
+  background-image: url(images/bg-card-front.png);
   border-radius: 10px;
   align-self: start;
   z-index: 1;
   margin-top: -25%;
 }
 .card__back {
-  background-image: url(/images/bg-card-back.png);
+  background-image: url(images/bg-card-back.png);
   align-self: end;
   margin-top: 18%;
 }
