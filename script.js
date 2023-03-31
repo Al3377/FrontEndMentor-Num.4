@@ -65,17 +65,17 @@ const form = document.getElementById("form");
 const monthError = document.getElementById("month-error");
 // adding event listener for button
 button.addEventListener("click", function () {
-  // finished.classList.remove("remove");
-  // form.classList.add("remove");
   if (monthInput.value === "" || yearInput.value === "") {
     monthError.classList.add("error-month");
     monthInput.classList.add("error");
     yearError.classList.add("error-month");
     yearInput.classList.add("error");
   } else {
-    monthError.classList.remove("error-month");
-    monthInput.classList.remove("error");
-    yearError.classList.remove("error-month");
-    yearInput.classList.remove("error");
+    finished.classList.remove("remove"); // Ads "finished" to the page
+    form.classList.add("remove"); // Removes form from page
+    // monthError.classList.remove("error-month");
+    // monthInput.classList.remove("error");
+    // yearError.classList.remove("error-month");
+    // yearInput.classList.remove("error");
   }
 });
